@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Registration</title>
+   <script src="..\Js\Wed.js" defer></script>
+   <script src="..\Js\javascript.js" defer></script>
+   <link rel="stylesheet" type="text/css" href="..\css\style.css">
+ 
+   
+   <link rel="stylesheet" href="..\css\styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+   </head>
+<body>
+
+<header>
+			<div class="logo">
+				<a href="#"><img src="..\Images\Webp.net-resizeimage.png" /></a>
+			</div>
+			<div id="user-controls">
+				<div id="user-icons">
+					<div id="cart-link">
+						<a href="#"><img src="..\Images\shopping-cart.png" alt="" /></a>
+					</div>
+					<div id="profile">
+						<a href="#"><img src="..\Images\user.png" alt="" /> </a>
+					</div>
+				</div>
+				<div id="user-auth">
+					<div><a href="">Log In</a></div>
+					<div><a href="Registration.html">Sign Up</a></div>
+				</div>
+				<div id="vendor-auth">
+					<a href="">Are you a Vendor</a>
+				</div>
+			</div>
+		</header><br>
+		
+		<div class="navbar" id="navbar">
+			<a href="#home">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Categories</button>
+				<div class="dropdown-content">
+					<a href="#">Category 1</a>
+					<a href="#">Category 2</a>
+					<a href="#">Category 3</a>
+					<a href="#">Category 4</a>
+					<a href="#">Category 5</a>
+				</div>
+			</div>
+			<a href="#news">Vendors</a>
+			<a href="newsletter.html">NewsLetter</a>
+			<a href="#news">About Us</a>
+			<a href="#news">Contact Us</a>
+		</div>
+<div class="bgimg">
+
+<form action="..\php\Registration.php" target="_self" method="POST" onsubmit="return validPassword()" class="container" >
+<center><h1>Sign Up</h1></center><br>
+<center><p style ="font-size: 16px">Please fill in this form to create your account</p><br>
+<hr class="line1"><hr class="line1"><br>
+
+
+<div class="col">
+	<a href="http://www.facebook.com" class="fb btn">
+	  <i class="fa fa-facebook fa-fw"></i> Sign Up with Facebook
+	 </a><br><br>
+	<a href="http://www.twitter.com" class="twitter btn">
+	  <i class="fa fa-twitter fa-fw"></i> Sign Up with Twitter
+	</a><br><br>
+	<a href="http://www.google.com" class="google btn"><i class="fa fa-google fa-fw">
+	  </i> Sign Up with Google
+	</a><br><br>
+  </div>
+
+
+<br><label><b>First Name</b></label><br>
+ <input type="text" id ="fname" name="fname" style="width:500px;" placeholder="Enter your first name here"><br><br>
+ 
+ <b>Last Name</b><br>
+ <input type="text" id ="lname" name="lname" style="width:500px;" placeholder="Enter your last name here"><br><br>
+
+ <b>Gender</b><br>
+<input type="radio" id="gender" name="gender" checked>Male
+<input type="radio" id="gender" name="gender" checked>Female
+<br><br>
+
+<b>Mobile Number</b><br>
+<input type="text" id ="mobile" name="mobile" style="width:500px;" pattern="[0-9]{10}" placeholder="Enter your mobile number here" required><br><br>
+
+<b>Email Address</b> <br>
+<input type="email" id="emailAdd" name="emailAdd" style="width:500px;" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-z]{2,3}" placeholder="Enter your email address here" required><br>
+
+<b>Password</b><br>
+<input type="password" id="pwd" name="pwd" style="width:500px;" placeholder="Enter your password here"  required><br><br>
+
+<b>Re-enter Password</b><br>
+<input type="password" id="rpwd" name="rpwd" style="width:500px;" placeholder="Re-enter your password here" required><br><br>
+
+<b>Wedding city</b><br>
+<select type="city" id="city" name="city" style="width:500px;">
+<option value="Choose">Select your wedding city</button>
+<option value="Colombo">Colombo</option>
+<option value="Mathara">Mathara</option>
+<option value="Kandy">Kandy</option>
+<option value="Kurunagala">Kurunagala</option>
+<option value="Hambanthota">Hambanthota</option>
+<option value="Galle">Galle</option>
+<option value="Gampaha">Gampaha</option>
+</select>
+<br><br>
+<b>Date of Birth(dd/mm/yyyy)</b><br>
+<input type="date" id="dob" name="dob" style="width:500px;"><br><br>
+
+<b>I am</b><br>
+<input type="radio" id="type" name="type" value="Bride" checked>Bride
+<input type="radio" id="type" name="type" value="Groom" checked>Groom
+<input type="radio" id="type" name="type" value="Groom" checked>Guest
+<br><br>
+
+<input type="checkbox" id="policy" name="policy" required onclick="enableButton()">	
+<b>Accept privacy policy terms</b><br>
+
+	
+<input type="submit" id="btnl" name="btnl" value="Register Now" disabled>
+<input type="submit" id="btn2" name="btnl" value="Reset">
+<br>
+
+<center><b>Already have an account?</b><br/></center>
+<center><a class="l" href="http://www.google.com" target="_blank">Log in</a></center>
+
+</form></div>
+
+
+<br>
+
+<hr class="line1"><br><br>
+
+<div class="footer">
+	<button class="open-button" onclick="openForm()">Chat</button>
+	<div class="chat-popup" id="myForm">
+		<form action="#" class="form-container">
+			<h1 style="text-align: center;">Messages</h1> <br>
+
+			<label for="mail" style="text-align: left;"><b>Enter your email</b></label>
+			<input for="mail"type="email" placeholder="Enter your mail address to reach you back" required><br>
+			<label for="msg" style="text-align: left;"><b>Enter your message</b></label>
+			<textarea placeholder="Type message.." name="msg" required></textarea>
+
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">
+				Close
+			</button>
+		</form>
+	</div>
+	<div id="site-map">
+		<div class="columnleftfooter vertical-menu">
+			<h2>DreamWedding</h2>
+			<a href="#" class="active">Home</a>
+			<div class="dropup">
+				<button class="dropbtn">Category</button>
+				<div class="dropup-content">
+					<a href="#">Category 1</a>
+					<a href="#">Category 2</a>
+					<a href="#">Category 3</a>
+					<a href="#">Category 4</a>
+					<a href="#">Category 5</a>
+				</div>
+			</div>
+			<a href="#">Vendors</a>
+			<a href="#">NewsLetter</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact Us</a>
+		</div>
+		<div id="newsletter">
+			<h2>NewsLetter</h2>
+			<div id="email-sub">
+				<div id="enter-email">
+					<img src="../Images/email.png" alt=""  height="40px"/>
+					<input type="email" placeholder="Enter your e-mail" />
+				</div>
+				<div id="emailSubcribe">
+					<div><button>Subscribe to NewsLetter ></button></div>
+				</div>
+			</div>
+		</div>
+		<div id="social-links">
+			<h2>Connect us With</h2>
+			<div id="social-media-img">
+				<img src="../Images/facebook.png" alt="" />
+				<img src="../Images/twitter.png" alt="" />
+				<img src="../Images/youtube.png" alt="" />
+				<img src="../Images/pinterest.png" alt="" />
+				<img src="../Images/instagram.png" alt="" />
+				<img src="../Images/linkedin.png" alt="" />
+			</div>
+		</div>
+	</div>
+	<div id="legal">
+		<div>
+			<div id="copyrights">
+				Copyright 2020 DreamWedding | All rights reserved
+			</div>
+			<div id="policies">
+				<ul>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms of use</a></li>
+					<li><a href="">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<button onclick="topFunction()" id="topBtn" title="Go to top">
+	Back to Top
+</button>
+
+</body>
+  </head>
+</html>

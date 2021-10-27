@@ -1,0 +1,178 @@
+
+input[type=text] ,input[type=email], input[type=password], input[type=city], input[type=date], input[type=submit]{
+	
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:lightgrey;
+}
+
+.container {
+	position: absolute;
+	right: 0;
+    margin:25px;
+	padding: 40px;
+	background-color:white;
+	font-family: Times New Roman, Times, serif;
+  border:groove;
+	
+  
+}	
+
+.propic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+ } 
+
+#formh2 {
+  border-style: groove;
+  border-bottom: 6px solid Black;
+  background-color: lightgrey;
+  
+}
+
+
+.bgimg {
+  
+  background-image: url(../Images/Bgimg1.jpg_large);
+  min-height: 1720px; 
+  min-width: 1400px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+  border: groove;
+}
+
+body{
+
+	background-position: center;
+	font-family: Times New Roman, Times, serif;
+}
+
+hr.line1{
+	border-top: 1px dotted black;
+}
+
+.container11 {
+	position: center ;
+	background-color:white;
+	background-image:url(../Images/Wed11.jpg);
+  right: 0;
+  font-family: Times New Roman, Times, serif;
+  border:groove;
+}	
+
+   .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color:lightslategray;
+    color: black;
+  }
+
+/* style inputs and link buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+a:hover
+	 { 
+		color:red;  
+	 }	
+
+.b{
+	font-family:Times New Roman, Times, serif;
+	font-size: 20px
+}
+* {
+  box-sizing: border-box;
+}
+
+a.l:link {color:#ff0000;}
+a.l:visited {color:#0000ff;}
+a.l:hover {font-size:150%;}
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Four equal columns  */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/*  inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 0.5;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container22 {
+  position: relative;
+  display: none;
+  background-image: url(../Images/Wed11.jpg);
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  font-family:Times New Roman, Times, serif;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+	opacity: 0.8;
+	}
+

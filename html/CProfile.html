@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Profile</title>
+   <script src="..\Js\Wed.js" defer></script>
+   <script src="..\Js\javascript.js" defer></script>
+   <link rel="stylesheet" type="text/css" href="..\css\style.css">
+ 
+   
+   <link rel="stylesheet" href="..\css\styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+   </head>
+<body>
+ 
+ <header>
+			<div class="logo">
+				<a href="#"><img src="..\Images\Webp.net-resizeimage.png" /></a>
+			</div>
+			<div id="user-controls">
+				<div id="user-icons">
+					<div id="cart-link">
+						<a href="#"><img src="..\Images\shopping-cart.png" alt="" /></a>
+					</div>
+					<div id="profile">
+						<a href="#"><img src="..\Images\user.png" alt="" /> </a>
+					</div>
+				</div>
+				<div id="user-auth">
+					<div><a href="">Log In</a></div>
+					<div><a href="Registration.html">Sign Up</a></div>
+				</div>
+				<div id="vendor-auth">
+					<a href="">Are you a Vendor</a>
+				</div>
+			</div>
+		</header>
+<br/>
+
+<div class="navbar" id="navbar">
+			<a href="#home">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Categories</button>
+				<div class="dropdown-content">
+					<a href="#">Category 1</a>
+					<a href="#">Category 2</a>
+					<a href="#">Category 3</a>
+					<a href="#">Category 4</a>
+					<a href="#">Category 5</a>
+				</div>
+			</div>
+			<a href="#news">Vendors</a>
+			<a href="#news">NewsLetter</a>
+			<a href="#news">About Us</a>
+			<a href="#news">Contact Us</a>
+		</div>
+		<br>
+ 
+<br>
+
+<div class="">
+
+	
+		         <br> 
+	
+				<form action = "../php/CProfile.php" method = "post"  class="container11" onsubmit="return validPassword()"><br>
+
+					<center><h1>My Account</h1></center><br>
+				<img src= "..\Images\wed8.png" class="propic" ><br><br>
+
+                First name <br><br>
+		 		<input type="text" name="fname"  required /><br>
+		 		 Last name<br>
+				<input type="text" name="lname"  required/><br>
+			
+				
+				Mobile Number<br>
+				<input type="text" id="mobile" name="mobile"  pattern="[0-9]{10}"><br>
+		 		
+				
+				 Accept privacy and terms<input type ="checkbox"  "name="policy" id = "policy" required onclick="enableButton()" ><br><br><br>
+		 		<input type="submit" id="btnl" class="click" name="" value= "update"disabled > 
+ 	               <input type="submit" id="btnl" class="update" name="" value= "delete" > 
+			 </form>
+	
+
+            </div>
+
+
+<hr class="line1"><br><br><br>
+
+
+<div class="footer">
+	<button class="open-button" onclick="openForm()">Chat</button>
+	<div class="chat-popup" id="myForm">
+		<form action="#" class="form-container">
+			<h1 style="text-align: center;">Messages</h1> <br>
+
+			<label for="mail" style="text-align: left;"><b>Enter your email</b></label>
+			<input for="mail"type="email" placeholder="Enter your mail address to reach you back" required><br>
+			<label for="msg" style="text-align: left;"><b>Enter your message</b></label>
+			<textarea placeholder="Type message.." name="msg" required></textarea>
+
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">
+				Close
+			</button>
+		</form>
+	</div>
+	<div id="site-map">
+		<div class="columnleftfooter vertical-menu">
+			<h2>DreamWedding</h2>
+			<a href="#" class="active">Home</a>
+			<div class="dropup">
+				<button class="dropbtn">Category</button>
+				<div class="dropup-content">
+					<a href="#">Category 1</a>
+					<a href="#">Category 2</a>
+					<a href="#">Category 3</a>
+					<a href="#">Category 4</a>
+					<a href="#">Category 5</a>
+				</div>
+			</div>
+			<a href="#">Vendors</a>
+			<a href="#">NewsLetter</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact Us</a>
+		</div>
+		<div id="newsletter">
+			<h2>NewsLetter</h2>
+			<div id="email-sub">
+				<div id="enter-email">
+					<img src="../Images/email.png" alt=""  height="40px"/>
+					<input type="email" placeholder="Enter your e-mail" />
+				</div>
+				<div id="emailSubcribe">
+					<div><button>Subscribe to NewsLetter ></button></div>
+				</div>
+			</div>
+		</div>
+		<div id="social-links">
+			<h2>Connect us With</h2>
+			<div id="social-media-img">
+				<img src="../Images/facebook.png" alt="" />
+				<img src="../Images/twitter.png" alt="" />
+				<img src="../Images/youtube.png" alt="" />
+				<img src="../Images/pinterest.png" alt="" />
+				<img src="../Images/instagram.png" alt="" />
+				<img src="../Images/linkedin.png" alt="" />
+			</div>
+		</div>
+	</div>
+	<div id="legal">
+		<div>
+			<div id="copyrights">
+				Copyright 2020 DreamWedding | All rights reserved
+			</div>
+			<div id="policies">
+				<ul>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms of use</a></li>
+					<li><a href="">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<button onclick="topFunction()" id="topBtn" title="Go to top">
+	Back to Top
+</button>
+
+</body>
+  </head>
+</html>
